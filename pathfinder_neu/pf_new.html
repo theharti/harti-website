@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Markus Hartmann</title>
+        <link rel="stylesheet" href="./pf_new.css?n=5"/>
+        <script src="./pfscript.js?n=8"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,400&display=swap"
+            rel="stylesheet">
+        <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    </head>
+    <body onload="setup()">
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="../images/Logo-Harmann-Markus.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="lni lni-close" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="../about.html">ABOUT</a></li>
+                        <li><a href="../projects.html">PROJECTS</a></li>
+                        <li><a href="../blog.html">BLOG</a></li>
+                        <li><a href="../contact.html">CONTACT</a></li>
+                    </ul>
+        
+                </div>
+                <i class="lni lni-menu" onclick="showMenu()"></i>
+            </nav>
+            <h1>Pathfinding Visualizer</h1>
+        </section>
+        <section class="pf">
+        <div class='container'>
+            <div class="left">
+                <div id='maze_container' class='maze_container'></div>
+            </div>
+
+            <div class="right">
+                <h1>Maze Solver</h1>
+                <button class="button" id="test" onclick="changeAlgo()">Solve</button>
+                <button class="button" onclick="reset()">Reset</button>
+                <div class="right-middle">
+                    <select class="algorithm" id="algorithms">
+                        <option value="1">BFS</option>
+                        <option value="2">Dijkstra</option>
+                    </select>
+                </div>
+                <div class="right-bottom">
+                    <p>Instructions: choose an Algorithm to solve the maze, then press solve to get the visualization. <br>You may also place walls by clicking on tiles.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!--Footer-->
+        <section class="footer">
+            <h4>about me</h4>
+            <p>Here are some links you might find useful to get in contact with me:</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/markus.ha.108/"><i class="lni lni-facebook-filled"></i></a>
+                <a href="https://twitter.com/Markus_ha2306"><i class="lni lni-twitter-filled"></i></a>
+                <a href="https://www.instagram.com/markus_2306/"><i class="lni lni-instagram-filled"></i></a>
+                <a><i class="lni lni-linkedin-original"></i></a>
+            </div>
+        </section>
+<script>
+    var navLinks=document.getElementById("navLinks");
+
+    function showMenu(){
+navLinks.style.right="0";
+}
+    function hideMenu(){
+navLinks.style.right="-200px";
+}
+</script>
+</body>

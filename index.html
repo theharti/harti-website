@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title> Markus Hartmann</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+     
+</head>
+<body>
+   <section class="header">
+       <nav>
+        <a href="index.html"><img src="images/Logo-Harmann-Markus.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="lni lni-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>    
+                </ul>
+            </div>
+           <i class="lni lni-menu" onclick="showMenu()"></i>
+       </nav>
+    <div class="text-box">
+        <h1>Markus Hartmann</h1>
+        <p>Welcome to my Website, nice to meet you!</p>
+        <a href="contact.html" class="hero-btn">Hire me!</a>
+       
+    </div>    
+    </section> 
+<!--myacademics-->
+    <section class="academics">
+        <h1>My acedemic background</h1>
+        <p>I grew up near Heidelberg Germany</p>
+        <div class="row">
+            <div clss="academics-col">
+                <h3>School</h3>
+                <p>I went to school at Leibniz-Gymnasium in Östringen, where I did my Abitur (A-levels) </p>
+            </div>
+            <div clss="academics-col">
+                <h3>University</h3>
+                <p>I enrolled at Friedrich-Schiller University in 2017 to study medicine. Currently I am studying computer science in my 4<sup>th</sup> Semester.</p>
+            </div>
+            <div clss="academics-col">
+                <h3>After Graduation</h3>
+                <p>After my Bachelors degree I am planning on working as a software engineer or in cyber security.</p>
+            </div>
+        </div>
+    </section>
+<!--campus-->
+    <section class="hobbies">
+        <h1> My Hobbies</h1>
+        <p>Outside of my life as a student I enjoy:</p>
+        <div class="row">
+            <div class="hobbies-col">
+                <img src="images/tennis.jpg">
+                <div class="layer">
+                    <h3>Tennis</h3>
+                </div>
+            </div>
+            <div class="hobbies-col">
+                <img src="images/climbing.jpg">
+                <div class="layer">
+                    <h3>Climbing</h3>
+                </div>
+            </div>
+            <div class="hobbies-col">
+                <img src="images/photography2.jpg">
+                <div class="layer">
+                    <h3>Photography</h3>
+                </div>
+            </div>
+        </div>
+        
+    
+    
+    </section>
+<!--Call To Action-->
+    <section class="cta">
+        <h1>You want to hire me?</h1>
+        <a href="contact.html"class="hero-btn">Contact me</a>
+    
+    </section>
+<!--Footer-->
+    <section class="footer">
+        <h4>about me</h4>
+        <p>Here are some links you might find useful to get in contact with me:</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/markus.ha.108/"><i class="lni lni-facebook-filled"></i></a>
+            <a href="https://twitter.com/Markus_ha2306"><i class="lni lni-twitter-filled"></i></a>
+            <a href="https://www.instagram.com/markus_2306/"><i class="lni lni-instagram-filled"></i></a>
+            <a><i class="lni lni-linkedin-original"></i></a>
+        </div>
+    </section>
+<!----------------- Javaskript-------------------->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+     function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>
+

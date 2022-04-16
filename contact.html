@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title> Markus Hartmann</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+     
+</head>
+<body>
+   <section class="sub-header">
+       <nav>
+        <a href="index.html"><img src="images/Logo-Harmann-Markus.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="lni lni-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>   
+                </ul>
+            
+            </div>
+           <i class="lni lni-menu" onclick="showMenu()"></i>
+       </nav>
+       <h1>contact me</h1>
+    </section> 
+<!--contact me-->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.690958715341!2d11.587482016087986!3d50.929433560615884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a6a8a4957ab63b%3A0xd61c822192d3055d!2sUniversity%20of%20Jena!5e0!3m2!1sen!2sde!4v1648899910473!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="lni lni-home"></i>   
+                    <span>
+                        <h5>currently residing in</h5>
+                        <p>Jena, Germany</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="lni lni-phone"></i>   
+                    <span>
+                        <h5>Interested in my number?</h5>
+                        <p>contact me!</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="lni lni-envelope"></i>   
+                    <span>
+                        <h5>markus.hartmann23061999@gmail.com</h5>
+                        <p>business e-mail</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your E-mail adress" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                    <textarea rows="8" name="message"placeholder="Message" required></textarea>
+                    <button class="hero-btn red-btn">Send Message</button>
+                </form>
+                
+            </div>
+        </div>
+    </section>
+    
+   
+<!--Footer-->
+    <section class="footer">
+        <h4>about us</h4>
+        <p>Here are some links you might find useful:</p>
+        <div class="icons">
+           <a href="https://www.facebook.com/markus.ha.108/"><i class="lni lni-facebook-filled"></i></a>
+            <a href="https://twitter.com/Markus_ha2306"><i class="lni lni-twitter-filled"></i></a>
+            <a href="https://www.instagram.com/markus_2306/"><i class="lni lni-instagram-filled"></i></a>
+            <a><i class="lni lni-linkedin-original"></i></a>
+        </div>
+    </section>
+<!----------------- Javaskript-------------------->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+     function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>
+

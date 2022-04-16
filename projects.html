@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title> Markus Hartmann</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+     
+</head>
+<body>
+   <section class="sub-header">
+       <nav>
+        <a href="index.html"><img src="images/Logo-Harmann-Markus.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="lni lni-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>      
+                </ul>
+            
+            </div>
+           <i class="lni lni-menu" onclick="showMenu()"></i>
+       </nav>
+       <h1>My projects</h1>
+    </section> 
+<!--Projects-->
+     <section class="academics">
+        <h1>Here are some projects I have worked on:</h1>
+        <p>If you're interested in one of these make sure to click on the link</p>
+        <div class="row">
+            <div clss="academics-col">
+                <h3>Sudoku solver</h3>
+                <p>A simple sudoku solver <br> that applies backtracking<br> and some simple algorithms</p>
+                <a class="hero-btn red-btn" href="./sudoku/sudoku.html">See</a>
+            </div>
+            <div clss="academics-col">
+                <h3>Pathfinder</h3>
+                <p>Pathfinding algorithms visualized.</p>
+                <a class="hero-btn red-btn" href="./pathfinder_neu/pf_new.html">See</a>
+            </div>
+            <div clss="academics-col">
+                <h3>Color changer</h3>
+                <p>A simple color changer for<br> a background</p>
+                <a class="hero-btn red-btn" href="proj_3.html#bc-section">See</a>
+            </div>
+        </div>
+    </section>
+<!--Footer-->
+    <section class="footer">
+        <h4>about us</h4>
+        <p>Here are some links you might find useful:</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/markus.ha.108/"><i class="lni lni-facebook-filled"></i></a>
+            <a href="https://twitter.com/Markus_ha2306"><i class="lni lni-twitter-filled"></i></a>
+            <a href="https://www.instagram.com/markus_2306/"><i class="lni lni-instagram-filled"></i></a>
+            <a><i class="lni lni-linkedin-original"></i></a>
+        </div>
+    </section>
+<!----------------- Javaskript-------------------->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+     function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>
+

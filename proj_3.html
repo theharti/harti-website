@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title> Markus Hartmann | projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+     
+</head>
+<body>
+   <section class="sub-header">
+       <nav>
+        <a href="index.html"><img src="images/Logo-Harmann-Markus.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="lni lni-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>     
+                </ul>
+            
+            </div>
+           <i class="lni lni-menu" onclick="showMenu()"></i>
+       </nav>
+       <h1>background changer</h1>
+    </section> 
+<!--background changer-->
+    <section id="bc-section">
+        <button class="hero-btn red-btn" onclick="random_bg_color();">Generate</button>
+        <h2></h2>
+    </section>
+   
+
+    
+<!--Footer-->
+    <section class="footer">
+        <h4>about me</h4>
+        <p>Here are some links you might find useful to get in contact with me:</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/markus.ha.108/"><i class="lni lni-facebook-filled"></i></a>
+            <a href="https://twitter.com/Markus_ha2306"><i class="lni lni-twitter-filled"></i></a>
+            <a href="https://www.instagram.com/markus_2306/"><i class="lni lni-instagram-filled"></i></a>
+            <a><i class="lni lni-linkedin-original"></i></a>
+        </div>
+    </section>
+<!----------------- Javaskript-------------------->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+     function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+    const button= document.querySelector('button');
+    const h2E1= document.querySelector('h2');
+    const bgE1=document.querySelector("[id='bc-section']");
+    button.addEventListener('click',()=>{
+        let color='#';
+        color+=Math.random().toString(16).slice(2,8);
+        bgE1.style.backgroundColor=color;
+        h2E1.innerText="Hex-Code for this color: "+color;
+        console.log(color);
+        
+    })
+</script>
+
+</body>
+</html>
+

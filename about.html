@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title> Markus Hartmann</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+     
+</head>
+<body>
+   <section class="sub-header">
+       <nav>
+        <a href="index.html"><img src="images/Logo-Harmann-Markus.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="lni lni-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>     
+                </ul>
+            
+            </div>
+           <i class="lni lni-menu" onclick="showMenu()"></i>
+       </nav>
+       <h1>About me</h1>
+    </section> 
+<!--About me content-->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1> That's me:</h1>
+                <p>I am a Computer Science student at the Friedrich-Schiller University in Jena. I enjoy playing tennis with my friends and going an hikes in nature. I would describe myself as ambitous, friendly and loyal. If you're interested in a detailed CV you can download below.</p>
+                <a href="/downloads/Lebenslauf_2021.pdf" download="CV_MarkusHartmann" class="hero-btn red-btn">Download</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg">            
+            </div>
+        </div>
+    
+    
+    </section>
+<!--Footer-->
+    <section class="footer">
+        <h4>about me</h4>
+        <p>Here are some links you might find useful to get in contact with me:</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/markus.ha.108/"><i class="lni lni-facebook-filled"></i></a>
+            <a href="https://twitter.com/Markus_ha2306"><i class="lni lni-twitter-filled"></i></a>
+            <a href="https://www.instagram.com/markus_2306/"><i class="lni lni-instagram-filled"></i></a>
+            <a><i class="lni lni-linkedin-original"></i></a>
+        </div>
+    </section>
+<!----------------- Javaskript-------------------->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+     function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>
+
