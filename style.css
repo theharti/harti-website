@@ -294,6 +294,8 @@ h3{
 .red-btn:hover{
     color:#fff;
 }
+
+
 /*---------blog page--------------*/
 .blog-content{
     width: 80%;
@@ -418,6 +420,12 @@ h3{
     outline: none;
     border: 1px solid #ccc;
     box-sizing: border-box;
+}
+@media(max-width:700px) {
+    .contact-col div h5 {
+        font-size: 12px;
+        
+    }
 }
 /*---------background changer--------------*/
 #bc-section{
