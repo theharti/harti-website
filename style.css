@@ -492,9 +492,36 @@ h3{
 #sudoku p {
     font-size: 20px;
 }
+/*--------Snake------------*/
+.snakeInstructions h3{
+    font-family: 'Montserrat';
+}
+.snake{
+    min-height: 80vh ;
+    width:100vw;  
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: black; 
+}
+.snake #game-board{
+    background-color: #ccc;
+    width: 80vmin;
+    height: 80vmin;
+    display: grid;
+    grid-template-rows: repeat(21,1fr);
+    grid-template-columns: repeat(21,1fr);
+}
+.snake .player{
+    background-color: hsl(200,100%,50%);
+    border: .25vmin solid black;
+}
+.snake .food{
+    background-color: hsl(50, 100%, 50%);
+    border: .25vmin solid black;
 
-
-
+}
 
 
 
