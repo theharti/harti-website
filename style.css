@@ -423,7 +423,7 @@ h3{
 }
 @media(max-width:700px) {
     .contact-col div h5 {
-        font-size: 12px;
+        font-size: 24px;
         
     }
 }
